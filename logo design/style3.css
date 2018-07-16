@@ -1,0 +1,88 @@
+body
+{
+  background-color: #fff;
+}
+
+.surounding
+{
+  display: block;
+  height: 500px;
+  width: 500px;
+  border: solid green 7px;
+  border-radius: 250px;
+  overflow: hidden;
+}
+
+.surounding img
+{
+  display: block;
+}
+
+.front
+{
+  transition: 10s;
+}
+
+.front:hover
+{
+  animation-name: some;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.back
+{
+  transition: 10s;
+}
+
+.back:hover
+{
+  animation-name: some;
+  animation-duration: 5s;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes some{
+  0%{transform: rotateY(180deg);}
+  100%{transform: rotateY(0deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Animation styles*/
+/*
+.surounding .back
+{
+  transform: rotateY(90deg);
+}
+
+.surounding .front
+{
+  position: absolute;
+}
+
+.surounding:hover
+{
+  animation: twirl 1s ease-in forwards reverse;
+}
+
+@@keyframes twirl{
+  0%{ transform: rotateY(0deg);}
+  100%{transform: rotateY(90deg);}
+}*/

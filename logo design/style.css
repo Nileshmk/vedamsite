@@ -1,0 +1,40 @@
+/*.back
+{
+  transform: rotateY(90deg);
+}*/
+body
+{
+  background-color: black;
+}
+.surounding
+{
+  border-radius: 250px;
+  overflow: hidden;
+}
+
+.back
+{
+  transform: rotateY(90deg);
+  position: absolute;
+  left: 7px;
+}
+
+.front
+{
+  overflow: hidden;
+  animation: re 4s linear forwards;
+  animation-iteration-count: infinite;
+}
+
+.back
+{
+  border-radius: 250px;
+  height: 400px;
+  animation: re 2s linear backwards reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes re{
+  0%{transform: rotateY(-90deg);}
+  100%{transform: rotateY(90deg);}
+}
